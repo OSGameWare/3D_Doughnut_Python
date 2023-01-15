@@ -1,7 +1,8 @@
 import pygame
-import math
 import colorsys
+import math
 
+#pygame screen initialization
 pygame.init()
 
 white = (255, 255, 255)
