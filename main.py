@@ -28,6 +28,7 @@ A, B = 0, 0  # rotating animation
 theta_spacing = 10
 phi_spacing = 1 # for faster rotation change to 2, 3 or more, but first change 86, 87 lines as commented
 
+#Edit text within chars to change the look of the doughnut
 chars = "0000000000000"  # luminance index
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -44,8 +45,6 @@ def hsv2rgb(h, s, v):
 def text_display(letter, x_start, y_start):
     text = font.render(str(letter), True, hsv2rgb(hue, 1, 1))
     display_surface.blit(text, (x_start, y_start))
-
-pygame.display.update()
 
 # def text_display(letter, x_start, y_start):
 #     text = font.render(str(letter), True, white)
